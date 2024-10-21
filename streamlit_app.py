@@ -600,7 +600,6 @@ st.markdown("<h2>Referencias</h2>", unsafe_allow_html=True)  # Usando HTML para 
 referencias_html = """
 <ol>
     <li> Notebook con EDA.  <a href="https://colab.research.google.com/drive/1Wx81uSH_uqySo-xhVqq9rAfl4xr1xdxc?usp=sharing">link</a></li>
-    <li> Github de la app. <a href="https://github.com/isandrade-udea/blank-app-2/tree/main">link</a> .</li>
     <li> Adopción Tecnológica del Comercio Electrónico en la Economía Popular. Recuperado el 21 de octubre de 2024: <a href="https://observatorioecommerce.mintic.gov.co/797/articles-334321_recurso_1.pdf">link</a> .</li>
 </ol>
 """
