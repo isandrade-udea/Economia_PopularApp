@@ -1,6 +1,6 @@
-# 🎈 Blank app template
+# :shopping_trolley: Economía Popular - Plaza Minorista Medellín
 
-A simple Streamlit app template for you to modify!
+Este informe explora los patrones de uso de herramientas digitales en negocios locales, junto con un modelo predictivo para segmentar tipos de negocio basado en datos recogidos.
 
 [![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://blank-app-template.streamlit.app/)
 
