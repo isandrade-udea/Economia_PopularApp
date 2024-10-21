@@ -432,6 +432,12 @@ y_pred = model.predict(X_test)
 # Calcular el F1-Score
 f1 = f1_score(y_test, y_pred)*100
 
+# Guardar el modelo en un archivo
+model.save_model('xgboost_model.json')
+
+#model = xgb.XGBClassifier()
+#model.load_model('xgboost_model.json')
+
 st.markdown(f"""
 **Modelo XGBoost - Extreme Gradient Boosting**: Este modelo utiliza un método avanzado que ayuda a tomar decisiones. 
 Fue entrenado con varios datos para que pueda hacer predicciones con precisión de: {f1:.2f}\% (F1-Score) .
