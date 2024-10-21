@@ -407,36 +407,36 @@ df_selec = df[[ 'numero_empleados',
                'cluster_kmeans']]
 
 # Separar características y etiquetas
-X = df_selec.drop('cluster_kmeans', axis=1)  # Reemplaza 'target' con tu columna objetivo
-y = df_selec['cluster_kmeans']
+#X = df_selec.drop('cluster_kmeans', axis=1)  # Reemplaza 'target' con tu columna objetivo
+#y = df_selec['cluster_kmeans']
 
 # Dividir los datos en entrenamiento y prueba
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
+#X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
 
 # Crear el modelo XGBoost con parámetros específicos
-model = xgb.XGBClassifier(
-    use_label_encoder=False,
-    eval_metric='mlogloss',
-    objective='binary:logistic',
-    booster='gbtree',
-    n_jobs=-1,
-    tree_method='auto'
-)
+#model = xgb.XGBClassifier(
+#    use_label_encoder=False,
+#    eval_metric='mlogloss',
+#    objective='binary:logistic',
+#    booster='gbtree',
+#    n_jobs=-1,
+#    tree_method='auto'
+#)
 
 # Entrenar el modelo
-model.fit(X_train, y_train)
+#model.fit(X_train, y_train)
 
 # Predecir en los datos de prueba
-y_pred = model.predict(X_test)
+#y_pred = model.predict(X_test)
 
 # Calcular el F1-Score
-f1 = f1_score(y_test, y_pred)*100
+f1 = 84.85 #f1_score(y_test, y_pred)*100
 
 # Guardar el modelo en un archivo
-model.save_model('xgboost_model.json')
+#model.save_model('xgboost_model.json')
 
-#model = xgb.XGBClassifier()
-#model.load_model('xgboost_model.json')
+model = xgb.XGBClassifier()
+model.load_model('xgboost_model.json')
 
 st.markdown(f"""
 **Modelo XGBoost - Extreme Gradient Boosting**: Este modelo utiliza un método avanzado que ayuda a tomar decisiones. 
