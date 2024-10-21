@@ -1,4 +1,4 @@
-# :shopping_trolley: Economía Popular - Plaza Minorista Medellín 
+# 🛒 Economía Popular - Plaza Minorista Medellín 
 
 Este informe explora los patrones de uso de herramientas digitales en negocios locales, junto con un modelo predictivo para segmentar tipos de negocio basado en datos recogidos.
 
