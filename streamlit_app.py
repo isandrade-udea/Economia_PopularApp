@@ -460,7 +460,7 @@ with col1:
         index=0
     )
 
-    empleados_cod = {'1-2': 0, '3-5': 2, '6-10': 3, '11 o más': 1}[empleados]
+    empleados_cod = {'1-2': 0, '3-5': 2, '6-10': 3, '10 o mas': 1}[empleados]
 
     # Opciones para el selectbox
     opciones = [
