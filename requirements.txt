@@ -1,7 +1,7 @@
-streamlit
-matplotlib
-seaborn
-scikit-learn
-prince
+streamlit == 1.39.0
+matplotlib == 3.9.2
+seaborn == 0.13.2
+scikit-learn ==1.5.2
+prince 
 numpy
-xgboost
+xgboost == 2.1.2
